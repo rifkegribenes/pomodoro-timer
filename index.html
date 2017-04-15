@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+ <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|700" rel="stylesheet">
+  <link type="text/css" href="style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pomodoro Timer | FreeCodeCamp</title>
+</head>
+
+<body>
+  <div class="container">
+    <h3 class="state">Pomodoro Timer</h3>
+    <div class='wrap'>
+      <div class="clock">
+      </div>
+      <div class='radialtimer' id='timer'>
+      </div>
+      <div class="controls">
+        <a href="#" class="start" aria-label="Start"><i class="fa fa-play"></i></a>
+        <a href="#" class="pause" aria-label="Pause"><i class="fa fa-pause"></i></a>
+        <a href="#" class="reset" aria-label="Reset"><i class="fa fa-refresh"></i></a>
+        <div class='pickwrap'>
+      <div class="picker set-session">
+        <h4>Session</h4>
+        <i id="s-dn" class="fa fa-minus dn-btn"></i>
+        <span id="s-time" class="time">25:00</span>
+        <i id="s-up" class="fa fa-plus up-btn"></i>
+      </div>
+      <div class="picker set-break">
+        <h4>Break</h4>
+        <i id="b-dn" class="fa fa-minus dn-btn"></i>
+        <span id="b-time" class="time">5:00</span>
+        <i id="b-up" class="fa fa-plus up-btn"></i>
+      </div>
+    </div>
+      </div>
+      <div class='ctoggle'>
+        <a href='#'>toggle controls</a>
+        </div>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
