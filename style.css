@@ -17,7 +17,6 @@ body {
   /*Fx 3.6-15*/
   background: linear-gradient(to bottom right, #ff009c, #051886);
   /*Standard*/
-  /* background: linear-gradient(180deg, #05193f, #ad95d9, #ff7e4e); */
   background-size: cover;
   background-attachment: fixed;
 }
@@ -53,13 +52,13 @@ body {
 .set-session {
   position: relative;
   top: -140px;
-  left: 46px;
+    width: 200px;
 }
 
 .set-break {
   position: relative;
-  top: 20px;
-  left: -46px;
+  top: -82px;
+    width: 200px;
 }
 
 .controls a {
@@ -85,11 +84,15 @@ body {
 
 h4 {
   margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5em;
 }
 
 .up-btn, .dn-btn {
   cursor: pointer;
   color: white;
+    font-size: 2em;
 }
 .up-btn:hover, .dn-btn:hover {
   color: #ffc474;
@@ -129,28 +132,27 @@ h4 {
 }
 
 .anim-sess {
-  background: #ff5673;
+  background: #ff009c;
   /* Old Browsers */
-  background: -webkit-radial-gradient(center, #ff5673, #ffc474);
+  background: -webkit-linear-gradient(top left, #ff009c, #051886);
   /*Safari 5.1-6*/
-  background: -o-radial-gradient(center, #ff5673, #ffc474);
+  background: -o-linear-gradient(top left, #ff009c, #051886);
   /*Opera 11.1-12*/
-  background: -moz-radial-gradient(center, #ff5673, #ffc474);
+  background: -moz-linear-gradient(top left, #ff009c, #051886);
   /*Fx 3.6-15*/
-  background: radial-gradient(ellipse at center, #ff5673, #ffc474);
-  /*Standard*/
+  background: linear-gradient(to bottom right, #ff009c, #051886);
 }
 
 .anim-break {
-  background: #d619c2;
+  background: #051886;
   /* Old Browsers */
-  background: -webkit-radial-gradient(center, #d619c2, #ff5673);
+  background: -webkit-radial-gradient(center, #051886, #68108e);
   /*Safari 5.1-6*/
-  background: -o-radial-gradient(center, #d619c2, #ff5673);
+  background: -o-radial-gradient(center, #051886, #68108e);
   /*Opera 11.1-12*/
-  background: -moz-radial-gradient(center, #d619c2, #ff5673);
+  background: -moz-radial-gradient(center, #051886, #68108e);
   /*Fx 3.6-15*/
-  background: radial-gradient(ellipse at center, #d619c2, #ff5673);
+  background: radial-gradient(ellipse at center, #051886, #68108e);
   /*Standard*/
 }
 
@@ -159,8 +161,8 @@ h4 {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 50%;
-  margin: -230px 0 0 -25%;
+  width: 90%;
+  margin: -230px 0 0 -45%;
 }
 
 .radialtimer {
@@ -184,12 +186,6 @@ h4 {
   position: absolute;
   width: 310px;
   height: 310px;
-  clip: rect(0px, 310px, 310px, 155px);
-  border-radius: 50%;
-}
-
-.radialtimer .slice.nc {
-  clip: rect(auto, auto, auto, auto);
   border-radius: 50%;
 }
 
@@ -197,11 +193,37 @@ h4 {
   position: absolute;
   width: 310px;
   height: 310px;
-  clip: rect(0px, 155px, 310px, 0px);
   transition: transform 1s linear;
   z-index: -100;
   border-radius: 50%;
-  background: #ffc474;
+}
+
+.r {
+    background: #ff5673; /* red */
+  /* Old Browsers */
+  background: -webkit-linear-gradient(top, #ff5673, #ff8d73); /* top red to bottom orange */
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(top, #ff5673, #ff8d73);
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top, #ff5673, #ff8d73);
+  /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, #ff5673, #ff8d73);
+  /*Standard*/
+    clip: rect(0px, 310px, 310px, 155px);
+}
+
+.l {
+    background: #ffc474; /* orange */
+  /* Old Browsers */
+  background: -webkit-linear-gradient(top, #ffc474, #ff8d73); /* top yellow to bottom orange */
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(top, #ffc474, #ff8d73);
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(top, #ffc474, #ff8d73);
+  /*Fx 3.6-15*/
+  background: linear-gradient(to bottom, #ffc474, #ff8d73);
+  /*Standard*/
+    clip: rect(0px, 156px, 310px, 0px);
 }
 
 .glow-container {
